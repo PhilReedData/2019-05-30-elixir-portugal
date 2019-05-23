@@ -108,8 +108,11 @@ address.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
-  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>.
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>. 
 </p>
+<ul>
+  <li>See also our <a href="https://www.google.com/maps/d/edit?mid=1cL1DZ5Lx6zpYrKaygMD5vdj0BgI&hl=en&ie=UTF8&msa=0&t=h&z=13&ll=38.72413779068859%2C-9.209824099999992">annotated map</a>.</li>
+</ul>
 {% endif %}
 
 {% comment %}
@@ -131,7 +134,7 @@ SPECIAL REQUIREMENTS
 Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
-  <strong>Requirements:</strong> Participants must bring a laptop with a
+  <strong>Requirements:</strong> Computers running Linux are provided. Participants may bring a laptop with a
   Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on. They should have a few specific software packages installed (listed <a href="#setup">below</a>).
 </p>
 
