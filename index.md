@@ -102,16 +102,21 @@ can use https://itouchmap.com/latlong.html to find the lat/long of an
 address.
 {% endcomment %}
 {% if page.latlng %}
-<p id="where">
+<!--<p id="where">
   <strong>Where:</strong>
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
   or
   <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>. 
-</p>
+</p>-->
 <ul>
-  <li>See also our <a href="https://www.google.com/maps/d/edit?mid=1cL1DZ5Lx6zpYrKaygMD5vdj0BgI&hl=en&ie=UTF8&msa=0&t=h&z=13&ll=38.72413779068859%2C-9.209824099999992">annotated map</a>.</li>
+  <li>{{page.address}}</li>
+  <li>Get directions with our <a href="https://www.google.com/maps/d/edit?mid=1cL1DZ5Lx6zpYrKaygMD5vdj0BgI&hl=en&ie=UTF8&msa=0&t=h&z=13&ll=38.72413779068859%2C-9.209824099999992">annotated map</a>.</li>
+  <li>See also 
+  <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
+  or
+  <a href="//maps.google.com/maps?q={{page.latlng}}">Google Maps</a>. </li>
 </ul>
 {% endif %}
 
